@@ -7,7 +7,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { ImCross } from "react-icons/im";
 import axios from "axios";
 import { userDataContext } from "../context/UserContext";
-import { authDataContext } from "../context/authContext";
+import { authDataContext } from "../context/AuthContext";
 import { ShopDataContext } from "../context/ShopContext";
 
 function Nav() {
