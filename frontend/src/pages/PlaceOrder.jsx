@@ -6,7 +6,7 @@ import razorpay from "../assets/razorpay.png";
 import { data, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { ShopDataContext } from "../context/ShopContext";
-import { authDataContext } from "../context/authContext";
+import { authDataContext } from "../context/AuthContext";
 import axios from "axios";
 
 function PlaceOrder() {
