@@ -44,7 +44,7 @@ function Login() {
       <div className="flex flex-col items-center text-center mt-6 gap-2">
         <span className="text-[28px] font-bold">Admin Login</span>
         <span className="text-[18px] text-gray-300">
-          Welcome to OneCart — login to continue
+          Welcome to OneCart website— login to continue
         </span>
       </div>
 
