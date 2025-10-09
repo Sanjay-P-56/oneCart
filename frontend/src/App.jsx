@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Registeration from "./pages/Registeration";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Nav2 from "./component/Nav2";
 import Nav from "./component/Nav";
