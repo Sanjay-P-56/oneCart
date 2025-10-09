@@ -21,7 +21,7 @@ app.use(cors({
   origin:["https://onecart-1-slb0.onrender.com","https://onecart-admin-slnf.onrender.com"],
   credentials:true
 }))
-
+app.options("*", cors());
 app.use("/api/auth",authRoutes);
 app.use("/api/user",userRoutes);
 app.use("/api/product",productRoutes);
