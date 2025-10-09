@@ -18,7 +18,7 @@ const app=express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin:["https://onecart-frontend-slb0.onrender.com","https://onecart-admin-slnf.onrender.com"],
+  origin:["https://onecart-1-slb0.onrender.com","https://onecart-admin-slnf.onrender.com"],
   credentials:true
 }))
 
