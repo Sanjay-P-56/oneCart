@@ -1,44 +1,42 @@
-import React from "react";
-import { useContext } from "react";
-import { useState } from "react";
-import { createContext } from "react";
+import React, { createContext, useState, useContext, useEffect } from "react";
 import { authDataContext } from "./AuthContext";
 import axios from "axios";
-import { useEffect } from "react";
 
 export const adminDataContext = createContext();
 
 function AdminContext({ children }) {
-  let [adminData, setAdminData] = useState(null);
-  let { serverUrl } = useContext(authDataContext);
+  const [adminData, setAdminData] = useState(null);
+  const { serverUrl } = useContext(authDataContext);
 
   const getAdmin = async () => {
     try {
-      let result = await axios.get(serverUrl + "/api/user/getAdmin", {
-        withCredentials: true,
+      const res = await axios.get(`${serverUrl}/api/user/getAdmin`, {
+        withCredentials: true, // send cookie
       });
-
-      setAdminData(result.data);
-      console.log(result.data);
-    } catch (error) {
-      console.log(error);
+      setAdminData(res.data);
+      console.log("Admin Data:", res.data);
+    } catch (err) {
+      console.log("Error fetching admin:", err.response?.data || err.message);
     }
   };
 
+  // Only fetch admin if token cookie exists
   useEffect(() => {
-    getAdmin();
+    if (document.cookie.includes("token")) {
+      getAdmin();
+    }
   }, []);
-  let value = {
+
+  const value = {
     adminData,
     setAdminData,
-    getAdmin
+    getAdmin,
   };
+
   return (
-    <div>
-      <adminDataContext.Provider value={value}>
-        {children}
-      </adminDataContext.Provider>
-    </div>
+    <adminDataContext.Provider value={value}>
+      {children}
+    </adminDataContext.Provider>
   );
 }
 
