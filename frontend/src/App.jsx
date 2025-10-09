@@ -4,7 +4,6 @@ import Registeration from "./pages/Registeration";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Nav2 from "./component/Nav2";
-import Nav from "./component/Nav";
 import { userDataContext } from "./context/UserContext";
 import Product from "./pages/Product";
 import About from "./pages/About";
