@@ -4,7 +4,7 @@ import Registeration from "./pages/Registeration";
 import Login from "./pages/login";
 import Home from "./pages/Home";
 import Nav2 from "./component/Nav2";
-import Nav from "./component/Nav";
+
 import { userDataContext } from "./context/UserContext";
 import Product from "./pages/Product";
 import About from "./pages/About";
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       {userData && <Nav2/>}
-      {/* {userData && <Nav/>} */}
+     
         <>
           <Routes>
             <Route path="/signup" element={userData?(<Navigate to={location.state?.from || "/"}/>) : (<Registeration/>)} />
