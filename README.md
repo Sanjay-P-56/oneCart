@@ -46,7 +46,7 @@ npm install
 2. Environment Variables
 
 To run the backend locally or on a server, you need to create a `.env` file in the `/backend` directory with the following variables:
-```bash
+```env
 PORT=8000
 MONGODB_URL=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
@@ -75,4 +75,4 @@ To run the frontend locally, create a `.env` file in the `/frontend` directory w
 ```env
 VITE_FIREBASE_APIKEY=your_firebase_api_key
 VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
-REACT_APP_BACKEND_URL=http://localhost:5000
+
