@@ -46,7 +46,7 @@ npm install
 2. Environment Variables
 
 To run the backend locally or on a server, you need to create a `.env` file in the `/backend` directory with the following variables:
-
+```bash
 PORT=8000
 MONGODB_URL=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
