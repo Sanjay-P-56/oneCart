@@ -41,24 +41,3 @@ OneCart is a full-stack e-commerce platform built using the **MERN stack**, enab
 git clone https://github.com/Sanjay-P-56/OneCart.git
 cd OneCart/backend
 
-npm install
-
-## **Environment Variables**
-
-To run the backend locally or on a server, you need to create a `.env` file in the `/backend` directory with the following variables:
-
-```env
-PORT=8000
-MONGODB_URL=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-ADMIN_EMAIL=your_admin_email
-ADMIN_PASSWORD=your_admin_password
-CLOUDINARY_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-RAZORPAY_KEY_ID=your_razorpay_key_id
-RAZORPAY_KEY_SECRET=your_razorpay_key_secret
-
-cd ../frontend
-
-
