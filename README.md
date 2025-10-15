@@ -57,5 +57,22 @@ CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 RAZORPAY_KEY_ID=your_razorpay_key_id
 RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+```
+3.Start the backend
+```bash
+npm run dev
+```
+### **Frontend**
+1.Navigate to frontend
+```bash
+cd OneCart/frontend
+npm install
+```
+2.Environment Variables
 
+To run the frontend locally, create a `.env` file in the `/frontend` directory with the following variables:
 
+```env
+VITE_FIREBASE_APIKEY=your_firebase_api_key
+VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
+REACT_APP_BACKEND_URL=http://localhost:5000
