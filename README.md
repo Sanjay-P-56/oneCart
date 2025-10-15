@@ -40,12 +40,13 @@ OneCart is a full-stack e-commerce platform built using the **MERN stack**, enab
 ```bash
 git clone https://github.com/Sanjay-P-56/OneCart.git
 cd OneCart/backend
+npm install
 ```
-```bash ## **Environment Variables**
+
+2. Environment Variables
 
 To run the backend locally or on a server, you need to create a `.env` file in the `/backend` directory with the following variables:
 
-```env
 PORT=8000
 MONGODB_URL=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
