@@ -22,6 +22,7 @@ function Login() {
         { email, password },
         { withCredentials: true }
       );
+      
       console.log(result.data);
       toast.success("Admin Logged in Successfully")
       getAdmin()
