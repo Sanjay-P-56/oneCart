@@ -13,7 +13,7 @@ import User from '../model/userModel.js'
 //     return res.status(500).json({ message: `getCurrentUser error ${error}` });
 //   }
 // }
-const getCurrentUser = async () => {
+    export const getCurrentUser = async () => {
   try {
     const response = await axios.get(`${serverUrl}/api/auth/getCurrentUser`, {
       withCredentials: true,
